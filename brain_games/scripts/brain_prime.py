@@ -8,13 +8,12 @@ from brain_games.cli import welcome_user
 
 def main() -> None:
     name = welcome_user()
-    print('Find the greatest common divisor of given numbers.')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     for _ in range(3):
-        num1 = int(random() * 100)
-        num2 = int(random() * 100)
-        print(f'Question: {num1} {num2}')
-        correct_answer = gcd(num1, num2)
-        answer = prompt.integer('Your answer: ')
+        number = int(random() * 100)
+        correct_answer = "yes" if is_prime(number) else "no"
+        print(f"Question: {number}")
+        answer = prompt.string('Your answer: ')
         if answer == correct_answer:
             print('Correct!')
         else:
@@ -25,10 +24,13 @@ def main() -> None:
     print(f'Congratulations, {name}!')
 
 
-def gcd(a, b):
-    while b:
-        a, b = b, a % b
-    return a
+def is_prime(number: int) -> bool:
+    if number < 2:
+        return False
+    for i in range(2, int(number ** 0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
 
 
 if __name__ == '__main__':

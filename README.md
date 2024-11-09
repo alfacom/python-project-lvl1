@@ -14,3 +14,7 @@ Demo Brain GCD
 Demo Brain Progression
 
 ![asciicinema](gif/progr.gif)
+
+Demo Brain Prime
+
+![asciicinema](gif/prime.gif)
