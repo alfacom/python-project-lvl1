@@ -10,3 +10,7 @@ Demo Brain Calc and Brain Even
 Demo Brain GCD
 
 ![asciicinema](gif/gcd.gif)
+
+Demo Brain Progression
+
+![asciicinema](gif/progr.gif)
