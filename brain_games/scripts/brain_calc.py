@@ -14,9 +14,9 @@ def main() -> None:
         num2 = int(random() * 100)
         operator = ['+', '-', '*'][int(random() * 3)]
         question = f'{num1} {operator} {num2}'
-        correct_answer = str(eval(question))
+        correct_answer = eval(question)
         print(f'Question: {question}')
-        answer = prompt.string('Your answer: ')
+        answer = prompt.integer('Your answer: ')
         if answer == correct_answer:
             print('Correct!')
         else:
