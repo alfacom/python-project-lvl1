@@ -1,16 +1,13 @@
+#!/usr/bin/env python3
 from random import random
 
 import prompt
 
+from brain_games.cli import welcome_user
+
 
 def main() -> None:
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    game(name)
-
-
-def game(name) -> None:
+    name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     for _ in range(3):
         random_number = int(random() * 100)
