@@ -1,12 +1,18 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.9.0"
-description = ""
+description = "An a collection of perfect brain games"
 authors = ["Dmitrii <alfacom141@gmail.com>"]
 readme = "README.md"
 packages = [
   { include = "brain_games" },
 ]
+classifiers = [
+    "Environment :: Console",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Games/Entertainment :: Puzzle Games"
+]
+repository = "https://github.com/alfacom/python-project-lvl1"
 
 [tool.poetry.dependencies]
 python = "^3.12"
