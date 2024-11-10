@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from random import random
+from random import randint
 
 import prompt
 
@@ -10,9 +10,9 @@ def main() -> None:
     name = welcome_user()
     print('What is the result of the expression?')
     for _ in range(3):
-        num1 = int(random() * 100)
-        num2 = int(random() * 100)
-        operator = ['+', '-', '*'][int(random() * 3)]
+        num1 = randint(1, 10)
+        num2 = randint(1, 10)
+        operator = ['+', '-', '*'][randint(0, 2)]
         question = f'{num1} {operator} {num2}'
         correct_answer = eval(question)
         print(f'Question: {question}')

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from random import random
+from random import randint
 
 import prompt
 
@@ -10,7 +10,7 @@ def main() -> None:
     name = welcome_user()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     for _ in range(3):
-        number = int(random() * 100)
+        number = randint(1, 10)
         correct_answer = "yes" if is_prime(number) else "no"
         print(f"Question: {number}")
         answer = prompt.string('Your answer: ')

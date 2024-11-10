@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from random import random
+from random import randint
 
 import prompt
 
@@ -10,8 +10,8 @@ def main() -> None:
     name = welcome_user()
     print('Find the greatest common divisor of given numbers.')
     for _ in range(3):
-        num1 = int(random() * 100)
-        num2 = int(random() * 100)
+        num1 = randint(1, 10)
+        num2 = randint(1, 10)
         print(f'Question: {num1} {num2}')
         correct_answer = gcd(num1, num2)
         answer = prompt.integer('Your answer: ')
