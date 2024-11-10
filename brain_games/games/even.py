@@ -3,7 +3,7 @@ from random import randint
 
 from brain_games.games.main import play_game, YES, NO
 
-EVEN_RULES = f'Answer {YES} if given number is even, otherwise answer {NO}.'
+EVEN_RULES = f'Answer "{YES}" if given number is even, otherwise answer "{NO}".'
 
 
 def even_question_generator() -> Sequence[int, str]:
