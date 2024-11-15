@@ -3,7 +3,7 @@ from random import randint
 
 from brain_games.games.main import play_game, YES, NO
 
-PRIME_RULES = f'Answer "{YES}" if given number is prime. Otherwise answer "{NO}".'
+PRIME_RULE = f'Answer "{YES}" if the number is prime. Otherwise answer "{NO}".'
 
 
 def is_prime(number: int) -> bool:
@@ -22,4 +22,4 @@ def prime_question_generator() -> Sequence[int, str]:
 
 
 def main() -> None:
-    play_game(rules=PRIME_RULES, question_generator=prime_question_generator)
+    play_game(rules=PRIME_RULE, question_generator=prime_question_generator)

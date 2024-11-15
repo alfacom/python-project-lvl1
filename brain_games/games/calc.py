@@ -3,7 +3,7 @@ from random import randint
 
 from brain_games.games.main import play_game
 
-CALC_RULES = 'What is the result of the expression?'
+CALC_RULE = 'What is the result of the expression?'
 
 
 def calc_question_generator() -> Sequence[str, str]:
@@ -16,4 +16,4 @@ def calc_question_generator() -> Sequence[str, str]:
 
 
 def main() -> None:
-    play_game(rules=CALC_RULES, question_generator=calc_question_generator)
+    play_game(rules=CALC_RULE, question_generator=calc_question_generator)

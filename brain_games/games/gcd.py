@@ -3,7 +3,7 @@ from random import randint
 
 from brain_games.games.main import play_game
 
-GCD_RULES = 'Find the greatest common divisor of given numbers.'
+GCD_RULE = 'Find the greatest common divisor of given numbers.'
 
 
 def gcd(a: int, b: int) -> int:
@@ -20,4 +20,4 @@ def gcd_question_generator() -> Sequence[Sequence[str], str]:
 
 
 def main() -> None:
-    play_game(rules=GCD_RULES, question_generator=gcd_question_generator)
+    play_game(rules=GCD_RULE, question_generator=gcd_question_generator)

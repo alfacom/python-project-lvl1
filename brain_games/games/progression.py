@@ -3,7 +3,7 @@ from random import randint
 
 from brain_games.games.main import play_game
 
-PROGRESSION_RULES = 'What number is missing in the progression?'
+PROGRESSION_RULE = 'What number is missing in the progression?'
 
 
 def progression_question_generator() -> Sequence[str]:
@@ -18,5 +18,5 @@ def progression_question_generator() -> Sequence[str]:
 
 
 def main() -> None:
-    play_game(rules=PROGRESSION_RULES,
+    play_game(rules=PROGRESSION_RULE,
               question_generator=progression_question_generator)
