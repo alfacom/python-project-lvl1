@@ -12,9 +12,10 @@ def gcd(a: int, b: int) -> int:
     return a
 
 
-def gcd_question_generator() -> Sequence[Sequence[int], str]:
+def gcd_question_generator() -> Sequence[Sequence[str], str]:
     question = randint(1, 10), randint(1, 10)
     answer = str(gcd(*question))
+    question = ' '.join(map(str, question))
     return question, answer
 
 
