@@ -8,7 +8,7 @@
 ## Установка
 
 Требуется python v3.12
-Скачивайте последний whl-файл и запустите команду:
+Скачивайте whl-файл со страницы [последнего релиза](https://github.com/alfacom/python-project-lvl1/releases/latest) и запустите команду:
 ```bash
 python3.12 -m pip install --user *.whl
 ```
