@@ -1,8 +1,6 @@
 from collections.abc import Sequence
 from random import randint
 
-from brain_games.games.main import play_game
-
 PROGRESSION_RULE = 'What number is missing in the progression?'
 
 
@@ -15,8 +13,3 @@ def progression_question_generator() -> Sequence[str]:
     correct_answer = progression[hidden_index]
     progression[hidden_index] = ".."
     return " ".join(map(str, progression)), str(correct_answer)
-
-
-def main() -> None:
-    play_game(rules=PROGRESSION_RULE,
-              question_generator=progression_question_generator)

@@ -1,10 +1,7 @@
 from collections.abc import Sequence
 from random import randint
 
-from brain_games.games.main import play_game, YES, NO
-
-PRIME_RULE = (f'Answer "{YES}" if given number is prime. '
-              f'Otherwise answer "{NO}".')
+PRIME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number: int) -> bool:
@@ -18,9 +15,5 @@ def is_prime(number: int) -> bool:
 
 def prime_question_generator() -> Sequence[int, str]:
     question = randint(1, 100)
-    answer = YES if is_prime(question) else NO
+    answer = "yes" if is_prime(question) else "no"
     return question, answer
-
-
-def main() -> None:
-    play_game(rules=PRIME_RULE, question_generator=prime_question_generator)

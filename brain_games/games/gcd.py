@@ -1,8 +1,6 @@
 from collections.abc import Sequence
 from random import randint
 
-from brain_games.games.main import play_game
-
 GCD_RULE = 'Find the greatest common divisor of given numbers.'
 
 
@@ -17,7 +15,3 @@ def gcd_question_generator() -> Sequence[Sequence[str], str]:
     answer = str(gcd(*question))
     question = ' '.join(map(str, question))
     return question, answer
-
-
-def main() -> None:
-    play_game(rules=GCD_RULE, question_generator=gcd_question_generator)

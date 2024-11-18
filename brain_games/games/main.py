@@ -3,8 +3,6 @@ import prompt
 from brain_games.cli import welcome_user
 
 ROUNDS = 3
-YES = "yes"
-NO = "no"
 
 
 def play_game(rules: str, question_generator: callable,
