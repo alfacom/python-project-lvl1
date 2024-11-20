@@ -1,10 +1,10 @@
 from collections.abc import Sequence
 from random import randint
 
-CALC_RULE = 'What is the result of the expression?'
+RULE = 'What is the result of the expression?'
 
 
-def calc_question_generator() -> Sequence[str, str]:
+def question_generator() -> Sequence[str, str]:
     num1 = randint(1, 10)
     num2 = randint(1, 10)
     operator = ['+', '-', '*'][randint(0, 2)]

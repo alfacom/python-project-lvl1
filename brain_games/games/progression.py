@@ -1,10 +1,10 @@
 from collections.abc import Sequence
 from random import randint
 
-PROGRESSION_RULE = 'What number is missing in the progression?'
+RULE = 'What number is missing in the progression?'
 
 
-def progression_question_generator() -> Sequence[str]:
+def question_generator() -> Sequence[str]:
     start = randint(1, 10)
     step = randint(1, 10)
     length = randint(5, 10)

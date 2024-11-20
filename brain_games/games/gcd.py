@@ -1,7 +1,7 @@
 from collections.abc import Sequence
 from random import randint
 
-GCD_RULE = 'Find the greatest common divisor of given numbers.'
+RULE = 'Find the greatest common divisor of given numbers.'
 
 
 def gcd(a: int, b: int) -> int:
@@ -10,7 +10,7 @@ def gcd(a: int, b: int) -> int:
     return a
 
 
-def gcd_question_generator() -> Sequence[Sequence[str], str]:
+def question_generator() -> Sequence[Sequence[str], str]:
     question = randint(1, 10), randint(1, 10)
     answer = str(gcd(*question))
     question = ' '.join(map(str, question))

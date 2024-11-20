@@ -1,7 +1,7 @@
 from collections.abc import Sequence
 from random import randint
 
-PRIME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number: int) -> bool:
@@ -13,7 +13,7 @@ def is_prime(number: int) -> bool:
     return True
 
 
-def prime_question_generator() -> Sequence[int, str]:
+def question_generator() -> Sequence[int, str]:
     question = randint(1, 100)
     answer = "yes" if is_prime(question) else "no"
     return question, answer

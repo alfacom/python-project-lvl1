@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
+import brain_games.games.progression as game
 from brain_games.games.main import play_game
-from brain_games.games.progression import PROGRESSION_RULE, \
-    progression_question_generator
 
 
 def main():
-    play_game(rules=PROGRESSION_RULE,
-              question_generator=progression_question_generator)
+    play_game(game)
 
 
 if __name__ == '__main__':

@@ -32,19 +32,19 @@ PATH=$PATH:/root/.local/bin
 
 В игре Brain Even необходимо указать, четное число или нет.
 
-![asciicinema](gif/calc_even.gif)
+[![asciicast](https://asciinema.org/a/x80XhDDT0qZMVnZjkLRjbDzOB.svg)](https://asciinema.org/a/x80XhDDT0qZMVnZjkLRjbDzOB)
 
 ### Demo Brain GCD
 
 В игре Brain GCD необходимо найти НОД(Наибольший Общий Делитель)
-![asciicinema](gif/gcd.gif)
+[![asciicast](https://asciinema.org/a/A1yL2Lzj5XgP2bXi4DOWlXLzv.svg)](https://asciinema.org/a/A1yL2Lzj5XgP2bXi4DOWlXLzv)
 
 ### Demo Brain Progression
 
 В игре Brain Progression необходимо найти пропущенный элемент прогрессии
-![asciicinema](gif/progr.gif)
+[![asciicast](https://asciinema.org/a/69AcuOjoOqRAOHLcwrdrdbx8F.svg)](https://asciinema.org/a/69AcuOjoOqRAOHLcwrdrdbx8F)
 
 ### Demo Brain Prime
 
 В игре Brain Prime необходимо указать, простое число или нет.
-![asciicinema](gif/prime.gif)
+[![asciicast](https://asciinema.org/a/cCTScGeDsZwvLVaOflj4Edhhr.svg)](https://asciinema.org/a/cCTScGeDsZwvLVaOflj4Edhhr)
